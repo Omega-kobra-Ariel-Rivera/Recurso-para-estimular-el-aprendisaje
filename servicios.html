@@ -2,149 +2,205 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barbara Caballero Veas</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpeg" />
-
-    <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="assets/css/servicios.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Diente de León</title>
+    <meta name="description" content="Apoyo psicopedagógico, clases particulares, evaluaciones, estimulación temprana, talleres y asesoría a docentes en San Felipe.">
+    <meta name="theme-color" content="#4b2e83">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Servicios | Diente de León">
+    <meta property="og:description" content="Apoyo psicopedagógico, clases particulares, evaluaciones, estimulación temprana, talleres y asesoría a docentes en San Felipe.">
+    <meta property="og:image" content="assets/img/logo.jpeg">
+    <meta property="og:locale" content="es_CL">
+    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpeg">
+    <link rel="apple-touch-icon" href="assets/img/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 
 <body>
-    <!-- Encabezado principal -->
-    <header class="bg-light text-center py-4 border-bottom">
-        <h1 class="fw-bold text-primary">Barbara Caballero Veas</h1>
-        <p class="mb-0">Psicopedagoga y Educadora Diferencial en formación</p>
-        <p class="fst-italic">Potenciando talentos desde la infancia</p>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <div class="contenedor">
+            <a class="marca" href="index.html">
+                <img src="assets/img/logo.jpeg" alt="" width="48" height="48">
+                <span>Diente de León<small>Barbara Caballero Veas</small></span>
+            </a>
+            <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+            <nav class="menu" id="menu" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre mí</a></li>
+                    <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a class="boton boton-whatsapp" href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Menú de navegación -->
-    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">Barbara Caballero</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <main id="contenido">
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+        <section class="cabecera">
+            <div class="contenedor">
+                <h1>Servicios</h1>
+                <p>Apoyo para niños y niñas, orientación para sus familias y trabajo con colegios. Atención en San Felipe y alrededores.</p>
+            </div>
+        </section>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html">Inicio</a>
+        <section class="seccion">
+            <div class="contenedor">
+                <div class="grupo">
+                    <div class="grupo-titulo">
+                        <h2>Para niños y niñas</h2>
+                        <p>Apoyo individual o en grupos pequeños, según lo que cada uno necesita.</p>
+                    </div>
+                    <div class="servicios">
+                        <div class="servicio">
+                            <h3>Apoyo psicopedagógico</h3>
+                            <p>Intervenciones adaptadas para dificultades de aprendizaje, atención o regulación emocional.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Clases particulares</h3>
+                            <p>Refuerzo personalizado en lectura, escritura y matemáticas, respetando el ritmo de cada estudiante.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Apoyo a estudiantes con TEA</h3>
+                            <p>Intervenciones respetuosas para niños con Trastorno del Espectro Autista u otras condiciones del neurodesarrollo.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Estimulación temprana</h3>
+                            <p>Actividades para el desarrollo del lenguaje, la motricidad, la atención y los vínculos afectivos en niños pequeños.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Apoyo socioemocional</h3>
+                            <p>Espacios de contención para fortalecer la autoestima y las habilidades para relacionarse.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Talleres lúdico-educativos</h3>
+                            <p>Actividades creativas que estimulan habilidades cognitivas, emocionales y sociales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div class="grupo-titulo">
+                        <h2>Para familias</h2>
+                        <p>Herramientas para acompañar el aprendizaje desde la casa.</p>
+                    </div>
+                    <div class="servicios">
+                        <div class="servicio">
+                            <h3>Evaluaciones diagnósticas</h3>
+                            <p>Instrumentos psicopedagógicos para conocer fortalezas y dificultades, con un plan de trabajo personalizado.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Orientación a familias</h3>
+                            <p>Estrategias concretas para padres, madres y apoderados.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Recursos didácticos</h3>
+                            <p>Muñecos y juegos hechos a mano para trabajar emociones, cuerpo y lenguaje en el hogar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div class="grupo-titulo">
+                        <h2>Para colegios y docentes</h2>
+                        <p>Trabajo con equipos educativos para aulas más inclusivas.</p>
+                    </div>
+                    <div class="servicios">
+                        <div class="servicio">
+                            <h3>Asesoría a docentes</h3>
+                            <p>Orientación para implementar estrategias inclusivas y adaptaciones curriculares.</p>
+                        </div>
+                        <div class="servicio">
+                            <h3>Talleres en establecimientos</h3>
+                            <p>Talleres para cursos completos sobre emociones, convivencia y talentos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-tenue">
+            <div class="contenedor">
+                <div class="intro-seccion">
+                    <h2>Cómo empezamos</h2>
+                    <p>Un proceso claro, para que sepas qué esperar en cada etapa.</p>
+                </div>
+                <ol class="pasos">
+                    <li>
+                        <h3>Conversamos</h3>
+                        <p>Me cuentas qué observas en tu hijo o hija y resolvemos tus dudas, sin costo.</p>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="nosotros.html">Nosotros</a>
+                    <li>
+                        <h3>Evaluamos</h3>
+                        <p>Aplico instrumentos psicopedagógicos para conocer sus fortalezas y dificultades.</p>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="servicios.html">Servicios</a>
+                    <li>
+                        <h3>Planificamos</h3>
+                        <p>Definimos objetivos y un plan de trabajo a su medida.</p>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="contacto.html">Redes Sociales</a>
+                    <li>
+                        <h3>Acompañamos</h3>
+                        <p>Sesiones de trabajo y seguimiento con la familia para ver los avances.</p>
                     </li>
-                </ul>
+                </ol>
             </div>
-        </div>
-    </nav>
+        </section>
 
-    <!-- Sección de Servicios -->
-    <main class="container py-5">
-        <h2 class="text-center mb-5 text-primary">Servicios que Ofrezco</h2>
-
-        <div class="row g-4">
-
-            <!-- Servicio 1 -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Apoyo Psicopedagógico</h4>
-                    <p>Evaluaciones e intervenciones adaptadas para estudiantes con dificultades de aprendizaje, atención o regulación emocional.</p>
+        <section class="seccion">
+            <div class="contenedor">
+                <div class="franja">
+                    <div>
+                        <h2>¿Conversamos sobre tu hijo o hija?</h2>
+                        <p>Cuéntame qué está pasando y te propongo cómo podemos trabajar juntos. La primera conversación no tiene costo.</p>
+                    </div>
+                    <div class="acciones">
+                        <a class="boton boton-whatsapp" href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Escribir por WhatsApp</a>
+                        <a class="boton boton-borde" href="contacto.html">Otros medios</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Servicio 2 -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Clases Particulares</h4>
-                    <p>Refuerzo académico personalizado en lectura, escritura y matemáticas, respetando los ritmos individuales de aprendizaje.</p>
-                </div>
-            </div>
-
-            <!-- Servicio 3 -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Talleres Lúdico-Educativos</h4>
-                    <p>Actividades creativas y divertidas que estimulan habilidades cognitivas, emocionales y sociales desde una mirada inclusiva.</p>
-                </div>
-            </div>
-
-            <!-- Servicio 4 -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Apoyo a estudiantes con TEA</h4>
-                    <p>Intervenciones respetuosas y adaptadas a las necesidades de niños con Trastorno del Espectro Autista u otras condiciones del neurodesarrollo.</p>
-                </div>
-            </div>
-
-            <!-- Servicio 5 -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Orientación a Familias</h4>
-                    <p>Acompañamiento y entrega de estrategias a padres para apoyar los procesos educativos desde el hogar.</p>
-                </div>
-            </div>
-
-            <!-- Servicio 6: Evaluaciones Diagnósticas -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Evaluaciones Diagnósticas</h4>
-                    <p>Aplicación de instrumentos psicopedagógicos para detectar fortalezas y debilidades en el aprendizaje y proponer planes personalizados.</p>
-                </div>
-            </div>
-
-            <!-- Servicio 7: Asesoría a docentes -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Asesoría a Docentes</h4>
-                    <p>Orientación para la implementación de estrategias inclusivas y adaptaciones curriculares en el aula.</p>
-                </div>
-            </div>
-
-            <!-- Servicio 8: Estimulación Temprana -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Estimulación Temprana</h4>
-                    <p>Actividades dirigidas al desarrollo integral en niños pequeños: lenguaje, motricidad, atención y vínculos afectivos.</p>
-                </div>
-            </div>
-
-            <!-- Servicio 9: Apoyo emocional -->
-            <div class="col-md-4">
-                <div class="service-card p-4 border rounded shadow-sm h-100">
-                    <h4>Apoyo Socioemocional</h4>
-                    <p>Espacios de contención y fortalecimiento emocional, especialmente en niños con baja autoestima o dificultades de socialización.</p>
-                </div>
-            </div>
-
-        </div>
-
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-light text-center py-3 mt-5 border-top">
-        <p class="mb-0">&copy; 2025 Barbara Caballero Veas | Todos los derechos reservados</p>
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-grid">
+                <div>
+                    <h2>Diente de León</h2>
+                    <p>Recursos para estimular el aprendizaje. Talleres, clases particulares y apoyo psicopedagógico para niños y niñas en San Felipe, V Región.</p>
+                </div>
+                <div>
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li><a href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener">WhatsApp +56 9 4861 8435</a></li>
+                        <li><a href="mailto:aprendizajedientedeleon2021@gmail.com">aprendizajedientedeleon2021@gmail.com</a></li>
+                        <li>San Felipe, Región de Valparaíso</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Redes</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/aprendizajedientedeleon2021" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/share/1B8vhnk7Z4/" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.tiktok.com/@dientedeleon28" target="_blank" rel="noopener">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pie-final">
+                <p>&copy; <span data-anio>2026</span> Barbara Caballero Veas. Todos los derechos reservados.</p>
+                <p>Sitio por <a href="https://github.com/Omega-kobra-Ariel-Rivera" target="_blank" rel="noopener">Rivera Systems</a></p>
+            </div>
+        </div>
     </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <a class="whatsapp-flotante" href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

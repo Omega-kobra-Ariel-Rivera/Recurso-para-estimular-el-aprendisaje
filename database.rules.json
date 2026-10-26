@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "comentarios": {
+      ".read": true,
+      ".indexOn": ["timestamp"],
+      "$id": {
+        ".write": "!data.exists() && newData.exists()",
+        ".validate": "newData.hasChildren(['nombre', 'comentario', 'timestamp'])",
+        "nombre": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 60"
+        },
+        "comentario": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 600"
+        },
+        "timestamp": {
+          ".validate": "newData.isString() && newData.val().length <= 40"
+        },
+        "likes": {
+          ".write": "newData.isNumber() && ((!data.exists() && newData.val() === 1) || (data.exists() && newData.val() === data.val() + 1))",
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "replies": {
+          ".validate": true
+        },
+        "$otro": {
+          ".validate": false
+        }
+      }
+    }
+  }
+}

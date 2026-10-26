@@ -4,113 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbara Caballero Veas</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpeg">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <title>Contacto | Diente de León</title>
+    <meta name="description" content="Escríbele a Barbara Caballero Veas por WhatsApp, correo o redes sociales. Psicopedagogía y talleres en San Felipe.">
+    <meta name="theme-color" content="#4b2e83">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto | Diente de León">
+    <meta property="og:description" content="Escríbele a Barbara Caballero Veas por WhatsApp, correo o redes sociales. Psicopedagogía y talleres en San Felipe.">
+    <meta property="og:image" content="assets/img/logo.jpeg">
+    <meta property="og:locale" content="es_CL">
+    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpeg">
+    <link rel="apple-touch-icon" href="assets/img/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 
 <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">Barbara Caballero</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html">Inicio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="nosotros.html">Nosotros</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="servicios.html">Servicios</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="contacto.html">Redes Sociales</a>
-                    </li>
+    <header class="encabezado">
+        <div class="contenedor">
+            <a class="marca" href="index.html">
+                <img src="assets/img/logo.jpeg" alt="" width="48" height="48">
+                <span>Diente de León<small>Barbara Caballero Veas</small></span>
+            </a>
+            <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+            <nav class="menu" id="menu" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre mí</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+                    <li><a class="boton boton-whatsapp" href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+
+        <section class="cabecera">
+            <div class="contenedor">
+                <h1>Contacto</h1>
+                <p>La forma más rápida es WhatsApp. También puedes dejarme un mensaje aquí y te respondo por correo.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor contacto">
+                <div>
+                    <h2>Escríbeme</h2>
+                    <a class="boton boton-whatsapp" href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Escribir por WhatsApp</a>
+                    <ul class="canales">
+                        <li><a href="tel:+56948618435"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+56 9 4861 8435<small>Llamar</small></span></a></li>
+                        <li><a href="mailto:aprendizajedientedeleon2021@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>Correo<small>aprendizajedientedeleon2021@gmail.com</small></span></a></li>
+                        <li><a href="https://www.instagram.com/aprendizajedientedeleon2021" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1" fill="currentColor"/></svg><span>Instagram<small>@aprendizajedientedeleon2021</small></span></a></li>
+                        <li><a href="https://www.facebook.com/share/1B8vhnk7Z4/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook<small>Diente de León</small></span></a></li>
+                        <li><a href="https://www.tiktok.com/@dientedeleon28" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg><span>TikTok<small>@dientedeleon28</small></span></a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=San+Felipe%2C+Valpara%C3%ADso%2C+Chile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>San Felipe, V Región<small>Atención presencial en la zona</small></span></a></li>
+                    </ul>
+                </div>
+
+                <form class="formulario" id="form-contacto" novalidate>
+                    <h2>Déjame un mensaje</h2>
+                    <div class="campos">
+                        <div class="campo">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required maxlength="80">
+                            <span class="error-campo" id="error-name"></span>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required maxlength="120">
+                            <span class="error-campo" id="error-email"></span>
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono <span class="opcional">(opcional)</span></label>
+                            <input type="tel" id="telefono" name="telefono" autocomplete="tel" inputmode="tel" placeholder="+56 9 1234 5678" maxlength="20">
+                        </div>
+                        <div class="campo">
+                            <label for="motivo">Motivo</label>
+                            <select id="motivo" name="motivo">
+                                <option>Apoyo psicopedagógico</option>
+                                <option>Clases particulares</option>
+                                <option>Evaluación diagnóstica</option>
+                                <option>Talleres</option>
+                                <option>Recursos didácticos</option>
+                                <option>Colegio o docentes</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="campo campo-ancho">
+                            <label for="time">Día y hora que te acomoda <span class="opcional">(opcional)</span></label>
+                            <input type="datetime-local" id="time" name="time">
+                        </div>
+                        <div class="campo campo-ancho">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" required maxlength="1500" placeholder="Cuéntame la edad de tu hijo o hija y en qué necesitas apoyo"></textarea>
+                            <span class="error-campo" id="error-message"></span>
+                        </div>
+                        <input type="text" name="sitio_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+                    </div>
+                    <button class="boton boton-principal" type="submit">Enviar mensaje</button>
+                    <p class="aviso" role="status" hidden></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="seccion seccion-tenue" id="opiniones">
+            <div class="contenedor opiniones">
+                <div>
+                    <div class="intro-seccion">
+                        <h2>Opiniones de familias y colegas</h2>
+                        <p>Experiencias de quienes han participado en talleres y sesiones.</p>
+                    </div>
+                    <div class="lista-opiniones" id="lista-opiniones" aria-live="polite">
+                        <p class="vacio">Cargando opiniones…</p>
+                    </div>
+                    <button class="boton boton-borde ver-mas" id="ver-mas" type="button" hidden>Ver más opiniones</button>
+                </div>
+
+                <form class="formulario" id="form-opinion" novalidate>
+                    <h2>Deja tu opinión</h2>
+                    <div class="campos">
+                        <div class="campo campo-ancho">
+                            <label for="op-nombre">Nombre</label>
+                            <input type="text" id="op-nombre" required maxlength="60" autocomplete="name">
+                            <span class="error-campo" id="error-op-nombre"></span>
+                        </div>
+                        <div class="campo campo-ancho">
+                            <label for="op-texto">Tu opinión</label>
+                            <textarea id="op-texto" required maxlength="600"></textarea>
+                            <span class="error-campo" id="error-op-texto"></span>
+                        </div>
+                    </div>
+                    <button class="boton boton-principal" type="submit">Publicar opinión</button>
+                    <p class="aviso" role="status" hidden></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-grid">
+                <div>
+                    <h2>Diente de León</h2>
+                    <p>Recursos para estimular el aprendizaje. Talleres, clases particulares y apoyo psicopedagógico para niños y niñas en San Felipe, V Región.</p>
+                </div>
+                <div>
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li><a href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener">WhatsApp +56 9 4861 8435</a></li>
+                        <li><a href="mailto:aprendizajedientedeleon2021@gmail.com">aprendizajedientedeleon2021@gmail.com</a></li>
+                        <li>San Felipe, Región de Valparaíso</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Redes</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/aprendizajedientedeleon2021" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/share/1B8vhnk7Z4/" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.tiktok.com/@dientedeleon28" target="_blank" rel="noopener">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pie-final">
+                <p>&copy; <span data-anio>2026</span> Barbara Caballero Veas. Todos los derechos reservados.</p>
+                <p>Sitio por <a href="https://github.com/Omega-kobra-Ariel-Rivera" target="_blank" rel="noopener">Rivera Systems</a></p>
             </div>
         </div>
-    </nav>
+    </footer>
 
-    <div class="us-img">
-        <img src="assets/img/logo.jpeg" class="logo" alt="Imagen promocional">
-    </div>
+    <a class="whatsapp-flotante" href="https://wa.me/56948618435?text=Hola%20Barbara%2C%20quisiera%20informaci%C3%B3n%20sobre%20tus%20talleres%20y%20servicios" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
-    <section class="text-center redes-sociales">
-        <h3 class="us-rs-title">Nuestras Redes Sociales</h3>
-        <div class="red-iconos">
-            <a href="https://wa.me/948618435" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-            </a>
-            <a href="https://www.tiktok.com/@dientedeleon28?_t=ZM-8wfcZiUVWp4&_r=1" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
-            </a>
-            <a href="https://www.instagram.com/aprendizajedientedeleon2021?igsh=b2Rjc2tzZDY3dmlz" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/share/1B8vhnk7Z4/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-            </a>
-        </div>
-    </section>
-
-    <form id="form">
-        <div class="field">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name">
-        </div>
-        <div class="field">
-            <label for="time">Hora y Fecha</label>
-            <input type="text" name="time" id="time">
-        </div>
-        <div class="field">
-            <label for="message">Mensaje</label>
-            <input type="text" name="message" id="message">
-        </div>
-        <div class="field">
-            <label for="email">Gmail</label>
-            <input type="text" name="email" id="email">
-        </div>
-
-        <input type="submit" id="button" value="Enviar">
-    </form>
-
-
-
-    <script type="text/javascript">
-        emailjs.init('e6wPRzH5yHEGwSQI2')
-    </script>
-
-    <div class="container">
-        <h1>Comentarios Profesionales</h1>
-        <form id="commentForm">
-            <input type="text" id="nombre" placeholder="Tu nombre" required>
-            <textarea id="comentario" placeholder="Escribe un comentario..." required></textarea>
-            <button type="submit">Enviar comentario ✉️</button>
-        </form>
-        <div id="comentarios"></div>
-    </div>
-    <script src="assets/js/app.js"></script>
-
-    <!-- FOOTER -->
-
-    <div class="container">
-        <p class="mb-0">&copy; 2025 Barbara Caballero Veas | Todos los derechos reservados</p>
-    </div>
-
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script src="assets/js/contacto.js"></script>
 </body>
 
 </html>
